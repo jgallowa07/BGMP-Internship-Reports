@@ -1,0 +1,81 @@
+\begin{thebibliography}{6}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Felsenstein(1981)]{Felsenstein1981-zs}
+J~Felsenstein.
+\newblock Evolutionary trees from {DNA} sequences: a maximum likelihood
+  approach.
+\newblock \emph{J. Mol. Evol.}, 17\penalty0 (6):\penalty0 368--376, 1981.
+\newblock ISSN 0022-2844.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/7288891}.
+
+\bibitem[Jung and Alt(2004)]{Jung2004}
+David Jung and Frederick~W. Alt.
+\newblock Unraveling v(d)j recombination: Insights into gene regulation.
+\newblock \emph{Cell}, 116\penalty0 (2):\penalty0 299--311, Jan 2004.
+\newblock ISSN 0092-8674.
+\newblock \doi{10.1016/S0092-8674(04)00039-X}.
+\newblock URL \url{https://doi.org/10.1016/S0092-8674(04)00039-X}.
+
+\bibitem[Shrock et~al.(2020)Shrock, Fujimura, Kula, Timms, Lee, Leng, Robinson,
+  Sie, Li, Chen, Logue, Zuiani, McCulloch, Lelis, Henson, Monaco, Travers,
+  Habibi, Clarke, Caturegli, Laeyendecker, Piechocka-Trocha, Li, Khatri, Chu, ,
+  Villani, Kays, Goldberg, Hacohen, Filbin, Yu, Walker, Wesemann, Larman,
+  Lederer, and Elledge]{Shrock2020}
+Ellen Shrock, Eric Fujimura, Tomasz Kula, Richard~T. Timms, I-Hsiu Lee, Yumei
+  Leng, Matthew~L. Robinson, Brandon~M. Sie, Mamie~Z. Li, Yuezhou Chen,
+  Jennifer Logue, Adam Zuiani, Denise McCulloch, Felipe J.~N. Lelis, Stephanie
+  Henson, Daniel~R. Monaco, Meghan Travers, Shaghayegh Habibi, William~A.
+  Clarke, Patrizio Caturegli, Oliver Laeyendecker, Alicja Piechocka-Trocha, Jon
+  Li, Ashok Khatri, Helen~Y. Chu, , Alexandra-Chlo{\'e} Villani, Kyle Kays,
+  Marcia~B. Goldberg, Nir Hacohen, Michael~R. Filbin, Xu~G. Yu, Bruce~D.
+  Walker, Duane~R. Wesemann, H.~Benjamin Larman, James~A. Lederer, and
+  Stephen~J. Elledge.
+\newblock Viral epitope profiling of covid-19 patients reveals cross-reactivity
+  and correlates of severity.
+\newblock \emph{Science}, 2020.
+\newblock ISSN 0036-8075.
+\newblock \doi{10.1126/science.abd4250}.
+\newblock URL
+  \url{https://science.sciencemag.org/content/early/2020/09/28/science.abd4250}.
+
+\bibitem[Starr et~al.(2020)Starr, Greaney, Hilton, Ellis, Crawford, Dingens,
+  Navarro, Bowen, Tortorici, Walls, King, Veesler, and Bloom]{Starr2020}
+Tyler~N. Starr, Allison~J. Greaney, Sarah~K. Hilton, Daniel Ellis,
+  Katharine~H.D. Crawford, Adam~S. Dingens, Mary~Jane Navarro, John~E. Bowen,
+  M.~Alejandra Tortorici, Alexandra~C. Walls, Neil~P. King, David Veesler, and
+  Jesse~D. Bloom.
+\newblock Deep mutational scanning of sars-cov-2 receptor binding domain
+  reveals constraints on folding and ace2 binding.
+\newblock \emph{Cell}, 182\penalty0 (5):\penalty0 1295 -- 1310.e20, 2020.
+\newblock ISSN 0092-8674.
+\newblock \doi{https://doi.org/10.1016/j.cell.2020.08.012}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S0092867420310035}.
+
+\bibitem[Twiddy et~al.(2003)Twiddy, Holmes, and Rambaut]{Twiddy2003}
+S.~Susanna Twiddy, Edward~C. Holmes, and Andrew Rambaut.
+\newblock {Inferring the Rate and Time-Scale of Dengue Virus Evolution}.
+\newblock \emph{Molecular Biology and Evolution}, 20\penalty0 (1):\penalty0
+  122--129, 01 2003.
+\newblock ISSN 0737-4038.
+\newblock \doi{10.1093/molbev/msg010}.
+\newblock URL \url{https://doi.org/10.1093/molbev/msg010}.
+
+\bibitem[Wu et~al.(2020)Wu, Zhao, Yu, Chen, Wang, Song, Hu, Tao, Tian, Pei,
+  Yuan, Zhang, Dai, Liu, Wang, Zheng, Xu, Holmes, and Zhang]{Wu2020}
+Fan Wu, Su~Zhao, Bin Yu, Yan-Mei Chen, Wen Wang, Zhi-Gang Song, Yi~Hu, Zhao-Wu
+  Tao, Jun-Hua Tian, Yuan-Yuan Pei, Ming-Li Yuan, Yu-Ling Zhang, Fa-Hui Dai,
+  Yi~Liu, Qi-Min Wang, Jiao-Jiao Zheng, Lin Xu, Edward~C. Holmes, and Yong-Zhen
+  Zhang.
+\newblock A new coronavirus associated with human respiratory disease in china.
+\newblock \emph{Nature}, 579\penalty0 (7798):\penalty0 265--269, Mar 2020.
+\newblock ISSN 1476-4687.
+\newblock \doi{10.1038/s41586-020-2008-3}.
+\newblock URL \url{https://doi.org/10.1038/s41586-020-2008-3}.
+
+\end{thebibliography}
