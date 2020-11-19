@@ -1,4 +1,4 @@
-\begin{thebibliography}{6}
+\begin{thebibliography}{8}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -12,6 +12,14 @@ J~Felsenstein.
 \newblock \emph{J. Mol. Evol.}, 17\penalty0 (6):\penalty0 368--376, 1981.
 \newblock ISSN 0022-2844.
 \newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/7288891}.
+
+\bibitem[Fowler and Fields(2014)]{Fowler2014}
+Douglas~M. Fowler and Stanley Fields.
+\newblock Deep mutational scanning: a new style of protein science.
+\newblock \emph{Nature Methods}, 11\penalty0 (8):\penalty0 801--807, Aug 2014.
+\newblock ISSN 1548-7105.
+\newblock \doi{10.1038/nmeth.3027}.
+\newblock URL \url{https://doi.org/10.1038/nmeth.3027}.
 
 \bibitem[Jung and Alt(2004)]{Jung2004}
 David Jung and Frederick~W. Alt.
@@ -56,6 +64,15 @@ Tyler~N. Starr, Allison~J. Greaney, Sarah~K. Hilton, Daniel Ellis,
 \newblock \doi{https://doi.org/10.1016/j.cell.2020.08.012}.
 \newblock URL
   \url{http://www.sciencedirect.com/science/article/pii/S0092867420310035}.
+
+\bibitem[Thyagarajan and Bloom(2014)]{Bloom2014}
+Bargavi Thyagarajan and Jesse~D Bloom.
+\newblock The inherent mutational tolerance and antigenic evolvability of
+  influenza hemagglutinin.
+\newblock \emph{eLife}, 3:\penalty0 e03300, jul 2014.
+\newblock ISSN 2050-084X.
+\newblock \doi{10.7554/eLife.03300}.
+\newblock URL \url{https://doi.org/10.7554/eLife.03300}.
 
 \bibitem[Twiddy et~al.(2003)Twiddy, Holmes, and Rambaut]{Twiddy2003}
 S.~Susanna Twiddy, Edward~C. Holmes, and Andrew Rambaut.

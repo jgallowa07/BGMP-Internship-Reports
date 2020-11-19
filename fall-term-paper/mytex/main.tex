@@ -56,13 +56,15 @@ These methods have laid the foundation for exploration and development of advanc
 from causing serious illness and even death.
 In this literature review, we explore the advanced quantitative assays, Phage Immunoprecipitation Sequencing
 and Deep Mutational Scanning, which allow us to measure and explore these complex and noisy problems.
-Concretely, we will observe the results and methods from \citet{Shrock2020} and \citet{Starr2020}, two papers that focus on the binding properties of the novel betacoronavirus, SARS-CoV-2.
+Concretely, we will observe the results and methods from \citet{Shrock2020} and \citet{Starr2020}, 
+two papers that focus on the binding properties of the novel betacoronavirus, SARS-CoV-2.
 % Further we explore the modeling and analysis techniques necessary to parse and query the resulting data from these protocols.
 \end{abstract}
 
 
 \section*{Introduction}
-% Hooray for Joe~\cite{Felsenstein1981-zs}.
+
+% Introduce the immune system
 Modern mammalian immune systems are constituted by the aggregate of proteins and cells which
 defend against unwanted invaders (pathogens).
 These defences keep the pathogens from harming the delicate and complex biological systems which keep us alive and healthy.
@@ -75,41 +77,65 @@ Incredibly, the combinatorial effects of specialized (VDJ) recombination results
 takes place in mere days (often a week or so) when encountering a new pathogen \citep{Jung2004}.
 
 ~
-
-As fast as this process works in contrast to all other forms of evolution (often on more ecological timescales), 
-the symptoms of an infection can still make an individual very ill, or even be fatal .
-Viruses are very good at hijacking our cells own machinery to replicate itself in order to propagate the infection.
-The degree to which these pathogens can harm host cells is determined by the amount of time it takes your adaptive immune system to elicit the right responses and create
-antibodies which can identify and induce destruction of pathogens and infected cells.
-Once an individual has encountered a pathogen and created the necessary cells needed to fend off the virus and infected cells,
+% Motivate the importance of quantitative assays.
+In contrast to all other forms of evolution (often on ecological timescales), 
+The process of generating specific antibodies to ward off an infection is incredibly fast.
+Unfortunately, the symptoms of an infection during that time frame can still make an individual very ill, or even be fatal.
+The ability of viruses to hijack our cell's own machinery to replicate itself in order to propagate the infection make them effecient and deadly.
+Luckily, the process of producing antibodies need not occur everytime we ecounter the same virus.
+Rather, once an individual has encountered a pathogen and created the necessary cells needed to fend off the virus and infected cells,
 the defences that were used are stored in a sort of ``immuno-memory" -- using another type specialized cell.
 Upon contact with a pathogen the individual has encountered in the past, then,
-the immune system has the infrastructure in place to elicit a fast and effective response, known as a immunity.
-One of the most impactful developments in human health has been our ability to provoke immune responses to common
+the immune system has the infrastructure in place to elicit a fast and effective response, 
+Having this cellular machinery is what's known as immunity in an individual - and is key to survival in a world filled with microbial pathogens.
+One of the most impactful developments in human health has been our ability to provoke immunity to common
 viruses without actually infecting us with a deadly disease causing pathogen.
-These biologically prepared agents are known as vaccines.
+These biologically prepared agents are known as \textit{vaccines}, 
+and according to the center for disease control (CDC.gov) will have prevented over $21,000,000$ hospitalizations and roughly $750,000$
+deaths among children born within the last $20$ years -- in the U.S alone.
+While this is an extreme success, the rate at which vaccines can be produced are a function of our ability to observe the physical properties of a virus.
+To date, the fastest a vaccine has been successfully developed was during the mumps outbreak in 1969 and took 4 years from start to finish.
+Facing a more deadly pathogen, of which we are certain exists, this slow rate of development could pose an existential threat to the human race.
 
 ~
 
+% Introduce epitopes, and how phip-seq can be used, briefly
 Commonly, a vaccine for some particular virus essentially models the virus - without any of the harmful properties.
-This can be thought of as giving your immune system a molecular picture of the virus so that it is prepared when the real thing is encountered
-Anything that elicits an immune response is known as an antigen, and the antigen for a particular pathogen is known as the epitope.
+This can be thought of as giving your immune system a molecular picture of the virus so that it is prepared when the real thing is encountered.
+Anything that elicits an immune response is known as an \textit{antigen}, and the antigen for a particular pathogen is known as the \textit{epitope}.
 Knowing the epitope for any virus is key in modeling it for vaccines.
 Inferring a particular antigen is no trivial process, the number of possible peptides chains forming a protein
 which constitute the epitope for any particular virus are nearly infinitesimal.
-To date there is no direct way to determine which proteins are expressed on a virus, and which constitute an antigen.
+To date there is no direct way to isolate which proteins are expressed on a virus, and which constitute an antigen.
+% Explain how mutation plays a rold and how deep mutational scanning can be used. 
 To complicate further, little is known about how sequence variation affects protein function.
-As viruses evolve, we would like to know how possible mutations impact our immuno-defences.
+As viruses evolve, we would like to know how possible mutations impact our immuno-defences; 
 In the case of the novel coronavirus, SARS-CoV-2, high mutation rates have already been found in the region which binds to our cells.
 In order to predict or understand how long immunity will last in the face of evolution, we must explore all variants of the epitope
 and their respective binding affinity relative to the wild type sequence.
 
 ~
+% explain which advances have been made and make clear what a quatitative assay is
+Fortunately, recent advances in techniques such as next generation sequencing (NGS), oligonucleotide synthesis (ONS), modern computing and more,
+have opened the door to a new, brute-force approach to the study of pathogen specific proteins and their respective humoral responses among individuals.
+Using \textit{Quantitative assays} in immunology, researchers now have the ability to explore the relevant likelihoods of nearly every single 
+possible antigen -- as well as every possible mutant of a particular antigen -- given the transcriptome of a pathogen.
+These large scale studies require complex and carefully executed protocols resulting in noisy data for analysis.
+Once the data is acquired complex modeling and computing techniques are applied to parse the signal and produce some form of likelihood surrounding a particular sequence.
+This likelihood then informs a great deal about the biological nature of an evolutionary tango between pathogens and the modern immune system.
+Quantitative assays in Immunology, particularly in the last decade, have laid the foundation for measuring protein interactions 
+between a virus and individual host cells at magnitude far
+greater than previously thought possible \citep{Fowler2014, Bloom2014}.
 
-Fortunately, recent advances in next generation sequencing (NGS), oligonucleotide synthesis (ONS), and PCR-induced 
+~ 
 
 Here, we dig into the benefits and limitations of two such quantitative assays, Phage Immunoprecipitation Sequencing (PhIP-Seq), 
-and Deep Mutational Scanning (DMS) along with the analysis techniques we use to query the resulting data from these protocols.
+and Deep Mutational Scanning (DMS) along with a hybrid technique, coined Phage-DMS. 
+With high interest and stake in the outcome of the novel betacoronavirus, \textit{SARS-CoV-2}, we 
+will explore the methods, results, and analysis tools of three studies applied to the  as a template for understanding quantitative assays as a whole.
+First, we explore \citet{Shrock}, a large-scale PhIP-Seq study done at harvard university to define epitopes in 
+Finally, we will explore the limitations and future directions.
+
 
 
 
