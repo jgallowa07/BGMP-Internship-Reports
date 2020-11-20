@@ -1,4 +1,4 @@
-\begin{thebibliography}{8}
+\begin{thebibliography}{13}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -21,6 +21,18 @@ Douglas~M. Fowler and Stanley Fields.
 \newblock \doi{10.1038/nmeth.3027}.
 \newblock URL \url{https://doi.org/10.1038/nmeth.3027}.
 
+\bibitem[Garrett et~al.(2020)Garrett, Galloway, Chu, Itell, Stoddard, Wolf,
+  Logue, McDonald, Matsen, and Overbaugh]{Garrett2020}
+Meghan~E. Garrett, Jared Galloway, Helen~Y. Chu, Hannah~L. Itell, Caitlin~I.
+  Stoddard, Caitlin~R. Wolf, Jennifer~K. Logue, Dylan McDonald, Frederick~A.
+  Matsen, and Julie Overbaugh.
+\newblock High resolution profiling of pathways of escape for sars-cov-2
+  spike-binding antibodies.
+\newblock \emph{bioRxiv}, 2020.
+\newblock \doi{10.1101/2020.11.16.385278}.
+\newblock URL
+  \url{https://www.biorxiv.org/content/early/2020/11/16/2020.11.16.385278}.
+
 \bibitem[Jung and Alt(2004)]{Jung2004}
 David Jung and Frederick~W. Alt.
 \newblock Unraveling v(d)j recombination: Insights into gene regulation.
@@ -28,6 +40,45 @@ David Jung and Frederick~W. Alt.
 \newblock ISSN 0092-8674.
 \newblock \doi{10.1016/S0092-8674(04)00039-X}.
 \newblock URL \url{https://doi.org/10.1016/S0092-8674(04)00039-X}.
+
+\bibitem[Larman et~al.(2011)Larman, Zhao, Laserson, Li, Ciccia, Gakidis,
+  Church, Kesari, Leproust, Solimini, and Elledge]{Larman2011}
+H.~Benjamin Larman, Zhenming Zhao, Uri Laserson, Mamie~Z. Li, Alberto Ciccia,
+  M.~Angelica~Martinez Gakidis, George~M. Church, Santosh Kesari, Emily~M.
+  Leproust, Nicole~L. Solimini, and Stephen~J. Elledge.
+\newblock Autoantigen discovery with a synthetic human peptidome.
+\newblock \emph{Nature biotechnology}, 29\penalty0 (6):\penalty0 535--541, May
+  2011.
+\newblock ISSN 1546-1696.
+\newblock \doi{10.1038/nbt.1856}.
+\newblock URL \url{https://pubmed.ncbi.nlm.nih.gov/21602805}.
+\newblock 21602805[pmid].
+
+\bibitem[Mohan et~al.(2018)Mohan, Wansley, Sie, Noon, Baer, Laserson, and
+  Larman]{Mohan2018}
+Divya Mohan, Daniel~L. Wansley, Brandon~M. Sie, Muhammad~S. Noon, Alan~N. Baer,
+  Uri Laserson, and H.~Benjamin Larman.
+\newblock Phip-seq characterization of serum antibodies using
+  oligonucleotide-encoded peptidomes.
+\newblock \emph{Nature Protocols}, 13\penalty0 (9):\penalty0 1958--1978, Sep
+  2018.
+\newblock ISSN 1750-2799.
+\newblock \doi{10.1038/s41596-018-0025-6}.
+\newblock URL \url{https://doi.org/10.1038/s41596-018-0025-6}.
+
+\bibitem[Naqvi et~al.(2020)Naqvi, Fatima, Mohammad, Fatima, Singh, Singh, Atif,
+  Hariprasad, Hasan, and Hassan]{Naqvi2020}
+Ahmad Abu~Turab Naqvi, Kisa Fatima, Taj Mohammad, Urooj Fatima, Indrakant~K.
+  Singh, Archana Singh, Shaikh~Muhammad Atif, Gururao Hariprasad, Gulam~Mustafa
+  Hasan, and Md~Imtaiyaz Hassan.
+\newblock Insights into sars-cov-2 genome, structure, evolution, pathogenesis
+  and therapies: Structural genomics approach.
+\newblock \emph{Biochimica et biophysica acta. Molecular basis of disease},
+  1866\penalty0 (10):\penalty0 165878--165878, Oct 2020.
+\newblock ISSN 1879-260X.
+\newblock \doi{10.1016/j.bbadis.2020.165878}.
+\newblock URL \url{https://pubmed.ncbi.nlm.nih.gov/32544429}.
+\newblock 32544429[pmid].
 
 \bibitem[Shrock et~al.(2020)Shrock, Fujimura, Kula, Timms, Lee, Leng, Robinson,
   Sie, Li, Chen, Logue, Zuiani, McCulloch, Lelis, Henson, Monaco, Travers,
@@ -64,6 +115,20 @@ Tyler~N. Starr, Allison~J. Greaney, Sarah~K. Hilton, Daniel Ellis,
 \newblock \doi{https://doi.org/10.1016/j.cell.2020.08.012}.
 \newblock URL
   \url{http://www.sciencedirect.com/science/article/pii/S0092867420310035}.
+
+\bibitem[Stoddard et~al.(2020)Stoddard, Galloway, Chu, Shipley, Itell, Wolf,
+  Logue, Magedson, Sung, Garrett, Crawford, Laserson, Matsen, and
+  Overbaugh]{Stoddard2020}
+Caitlin~I. Stoddard, Jared Galloway, Helen~Y. Chu, Mackenzie~M. Shipley,
+  Hannah~L. Itell, Caitlin~R. Wolf, Jennifer~K. Logue, Ariana Magedson, Kevin
+  Sung, Meghan Garrett, Katharine~H.D. Crawford, Uri Laserson, Frederick~A.
+  Matsen, and Julie Overbaugh.
+\newblock Epitope profiling reveals binding signatures of sars-cov-2 immune
+  response and cross-reactivity with endemic hcovs.
+\newblock \emph{bioRxiv}, 2020.
+\newblock \doi{10.1101/2020.10.29.360800}.
+\newblock URL
+  \url{https://www.biorxiv.org/content/early/2020/10/29/2020.10.29.360800}.
 
 \bibitem[Thyagarajan and Bloom(2014)]{Bloom2014}
 Bargavi Thyagarajan and Jesse~D Bloom.
