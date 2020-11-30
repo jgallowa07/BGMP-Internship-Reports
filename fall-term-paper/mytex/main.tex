@@ -43,17 +43,18 @@
 Protection from rapidly spreading and evolving viruses is key to human health and survival.
 The molecular nature of infection and respective immune system defences presents us with a complex and noisy set of problems to solve if we are to combat infectious disease and understand the nature of their evolution.
 Most notably, we need to understand the affinity of a virus to bind to a host cell via proteins expressed on the surface of the cell's outer membrane.
-These proteins allow the virus to enter a host cell, then proceed to hijack the cell's own machinery to replicate and propagate an infection within the host individual.
+These proteins allow the virus to enter a host cell, then proceed to hijack the cell's own machinery in order to replicate itself and propagate an infection within the host individual.
 In the context of SARS-CoV-2, understanding the immune response with respect to those binding proteins is critical for prevention and prediction of disease severity.
-Additionally, understanding the evolution of these binding sites allows us to interpret active selection among the viral populationas well as duration of host immunity post-infection.
+Additionally, understanding the evolution of these binding sites allows us to interpret active selection among the viral populations well as duration of host immunity post-infection.
 Neither of these are trivial problems to solve.
-Fortunately, recent advances in next generation sequencing (NGS), oligonucleotide synthesis (ONS), and PCR-induced mutagenesis have driven the development of quantitative assays and given us the ability to explore and quantify fitness of particular proteins in the context of binding affinity to entry sites on host cells.
-These methods have laid the foundation for rapid exploration and development of advanced vaccines which provide protection against deadly pathogens.
-In this literature review, we explore two techniques which leverage \textit{quantitative assays}; Phage Immunoprecipitation Sequencing (PhIP-Seq) and Deep Mutational Scanning (DMS).
-In short, these methods allow us to measure and explore binding properties of relevant proteins and thus provide insight into the nature of a virus with respect to it's \textit{pathogenesis}.
-Concretely, we will provide background and motivation of quantitative assays by observing the results and methods from \citet{Shrock2020} and \citet{Starr2020} -- 
-two studies which focus on the binding properties of the novel betacoronavirus, SARS-CoV-2 and it's potential variants.
-The primary motivation behind this literature review is to provide an approachable explanation of novel techniques which are being used to rapidly characterize how we are combating novel, viral outbreaks.
+Fortunately, recent advances in next generation sequencing (NGS), oligonucleotide synthesis (ONS), and PCR-induced mutagenesis have driven the development and analysis of \textit{quantitative assays}. 
+%In the context viral immunology, these assays have given us the ability to explore and measure the fitness of a particular protein and it's respective binding affinity to other proteins of interest.
+%The insights gained have laid the foundation for understanding the .
+In this literature review, we explore two techniques which leverage quantitative assays; Phage Immunoprecipitation Sequencing (PhIP-Seq) and Deep Mutational Scanning (DMS).
+In short, these methods allow us to measure fitness and binding properties of relevant proteins and thus provide insight into the nature of a virus with respect to it's \textit{pathogenesis}.
+We will provide background and motivation of quantitative assays by observing the results and methods from \citet{Shrock2020} and \citet{Starr2020} -- 
+two studies which focus on the binding properties of the novel betacoronavirus, \textit{SARS-CoV-2}, and it's potential variants.
+The primary motivation behind this literature review is to provide an approachable explanation of novel techniques which are being used to rapidly characterize novel viruses and their respective spread across populations.
 %Here we're using the SARS-CoV-2 virus as a model but it should be noted these techniques can and have been applied to a much wider variety of ??
 % Further we explore the modeling and analysis techniques necessary to parse and query the resulting data from these protocols.
 \end{abstract}
@@ -79,30 +80,26 @@ Exploring the function of proteins and their properties is a necessity when unco
 \section*{Introduction}
 
 % Introduce the immune system
-Modern mammalian immune systems are constituted by the aggregate of proteins and specialized cells known as \textit{lymphocytes} which
-defend against unwanted invaders (pathogens).
+Modern mammalian immune systems are constituted by the aggregate of proteins and specialized cells known as \textit{lymphocytes} which defend against unwanted invaders (\textit{pathogens}).
 These defences keep the pathogens from harming the delicate and complex biological systems which keep us alive and healthy.
-However, deadly pathogenic outbreaks which rapidly spread among humans and other species can often harm or kill a large percentage of populations \citep{Wu2020}.
-In the case of viruses, replication as a function of fitness drives pathogens to evolve much in the same way we do --
-often meaning the most potent and infectious pathogens prevail as a product of their genome evolution \citep{Twiddy2003, Felsenstein1981-zs}.
-Fighting fire with fire, the adaptive immune system works through similar processes of mutation and selection inside our own body
-to evolve along-side these pathogens and confer specialized protection against pathogens.
-In many cases, this protection from a virus lasts throughout the lifetime of an individual.
+However, pathogenic outbreaks which rapidly spread among humans and other species can often harm or kill a large percentage of populations \citep{Wu2020}.
+In the case of viruses, replication as a function of viral fitness drives pathogens to evolve much in the same way we do -- often meaning the most potent and infectious pathogens prevail as a product of their genome evolution \citep{Twiddy2003, Felsenstein1981-zs}.
+Fighting fire with fire, the adaptive immune system works through similar processes of mutation and selection inside our own body to evolve along-side these pathogens and confer specialized protection.
+%In many cases, this protection from a virus lasts throughout the lifetime of an individual.
 Incredibly, the combinatorial effects of specialized (VDJ) recombination results in enough diversity to select upon that evolution of specialized cells
 takes place in mere days (often a week or so) when encountering a new pathogen \citep{Jung2004}.
 
 
 % Motivate the importance of quantitative assays.
 In contrast to all other forms of evolution (often on ecological timescales), 
-The process of generating specific antibodies to ward off an infection is incredibly fast.
+the process of generating specific antibodies to ward off an infection is incredibly fast.
 Unfortunately, the symptoms of an infection during that time frame can still make an individual very ill, or even be fatal.
 The ability of viruses to replicate itself in order to propagate the infection make them efficient and deadly.
-Luckily, the process of producing antibodies need not occur every time we encounter the same virus.
-Rather, once an individual has encountered a pathogen and created the necessary cells to fend off the virus and infected cells
-the defences that were created are stored in a sort of ``immuno-memory" -- using another type specialized cell.
+Luckily the process of producing antibodies need not occur every time we encounter the same virus.
+Rather, once an individual has encountered a pathogen and created the necessary cells to fend off the virus and infected cells the defences that were created are stored in a sort of ``immuno-memory" -- using another type specialized cell.
 Upon contact with a pathogen the individual has encountered in the past, then,
 the immune system has the infrastructure in place to elicit a fast and effective response.
-Having this cellular machinery is what's known as \textit{immunity} in an individual - and is key to survival in a world filled with microbial pathogens.
+Having this cellular machinery is what's known as \textit{immunity} in an individual
 
 
 % context of vaccines
@@ -110,54 +107,54 @@ One of the most impactful developments in human health has been our ability to p
 These biologically prepared agents are known as \textit{vaccines} --
 and according to the center for disease control (CDC.gov) will have prevented over $21,000,000$ hospitalizations and roughly $750,000$
 deaths among children born within the last $20$ years in the U.S alone.
-While this is an extreme success, the rate at which vaccines can be produced are a function of our ability to observe the physical properties of a virus.
+While this is an extreme success, the rate at which modern vaccines can be produced are a function of our ability to observe the molecular properties of a virus.
 To date, the fastest a vaccine that has been successfully developed was during the mumps outbreak in 1969 and took 4 years from start to finish.
-Facing a more deadly pathogen, this slow rate of development could pose an existential threat to modern populations in a globalized world.
+Facing a more deadly pathogen, this rate of development could pose an existential threat to modern populations in a globalized world.
 
 
 % Introduce epitopes, and how phip-seq can be used, briefly
 Commonly, a vaccine for some particular virus essentially models the virus without any of the harmful properties.
 This can be thought of as giving your immune system a molecular picture of the virus so that it is prepared when the real thing is encountered.
-Any molecular sequence that elicits an immune response is known as an \textit{antigen} -- and the antigen targeted by antibodies for a particular set of pathogens is known as the \textit{epitope}.
-Inferring the epitope for any virus is key for developing vaccines and stands as tough problem in the case of most viruses.
+Any molecular sequence that elicits an immune response is known as an \textit{antigen}.
+In greater detail, the antigen targeted by our own antibodies for a particular set of pathogens is known as the viral \textit{epitope}.
+Inferring the epitope for any virus is key for developing vaccines and stands as tough problem in the field \citep{Stoddard2020}.
 To date there is no direct way to isolate which proteins are expressed on a virus, and which constitute an antigen.
 The number of possible proteins which could constitute an epitope for any particular virus is defined by every possible sub-sequence within its respective proteome.
-To complicate further, little is known about how sequence variation from mutation impacts protein function as the pathogen evolves.
-We would like to know how possible mutations impact our immuno-defences;
-in the case of the novel coronavirus, SARS-CoV-2, high mutation rates have already been found in the region which binds to our cells \citep{Stoddard2020}.
-In order to predict or understand how long immunity will last in the face of evolution, we must explore all variants of the epitope and their respective binding affinity relative to the wild type sequence.
+To complicate further, little is known about how sequence variation from genome mutation may impact a proteins function as the pathogen evolves.
+In the case of the novel coronavirus, SARS-CoV-2, high mutation rates have already been found in the region which binds to our cells \citep{Garrett2020, Starr2020}.
+In order to predict or understand how long immunity will last in the face of evolution, we must explore mutations which allow the viral epitope to escape identification by the adaptive immune system \citep{Garrett2020}.
+Additionally, we must explore all protein variants of the epitope and their relative (to the wildtype protein) binding affinity to sites on the host cell if we are to understand the current forces of selection acting on the viral genome during an outbreak.
 
 
 % explain which advances have been made and make clear what a quatitative assay is
-Fortunately, recent advances in techniques such as next generation sequencing (NGS), oligonucleotide synthesis (ONS), modern computing and more, have opened the door to a new brute force, high throughput approach to exploring these outstanding questions.
-% These advances have provided the tools necessary to study pathogen specific proteins and their respective immuno-related (humoral) responses across many individuals.
-The conjunction of these advancements have provided the infrastructure necessary to create and analyze \textit{Quantitative assays} in immunology.
-Using the related protocols and analysis techniques, researchers now have the ability to explore the relevant likelihoods of nearly every single possible antigen -- as well as every possible mutant of a particular antigen.
-These large scale studies require complex and carefully executed protocols resulting in large and noisy data for analysis \citep{Mohan2018, Bloom2014, Shrock2020}.
-Once the data is acquired, advanced modeling and computing techniques are applied to parse the signal from noise and produce some form of likelihood surrounding a particular sequence.
-This likelihood then informs a great deal about the biological nature of an evolutionary tango between pathogens and an individuals immune system \citep{Garrett2020}.
-Quantitative assays in Immunology, particularly in the last decade, have laid the foundation for measuring protein interactions between a virus and individual host cells at a magnitude far greater than was previously possible with traditional techniques \citep{Fowler2014, Bloom2014}.
+Recent advances in techniques such as next generation sequencing (NGS), oligonucleotide synthesis (ONS), modern computing and more, have opened the door to a new brute force, high throughput approach to exploring these outstanding questions.
+Most notably, these tools have provided an avenue to create and explore results from large-scale \textit{Quantitative assays} in immunology.
+Using the related protocols and analysis techniques, researchers now have the ability to explore nearly every possible antigen that could be derived from the proteome of a virus -- as well as the relative fitness of nearly every possible mutant of a particular antigen.
+These large scale studies require complex and carefully executed protocols resulting in large and noisy datasets for analysis \citep{Mohan2018, Bloom2014, Shrock2020}.
+Once the data is acquired, advanced modeling and computing techniques are applied to parse signal from noise and produce some form of likelihood surrounding a particular sequence.
+This likelihood then informs a great deal about the nature, current standing, and potential outcome of the evolutionary tango between pathogens and an individual's immune system \citep{Garrett2020}.
 
 
 % what are we going to do
+Quantitative assays in Immunology, particularly in the last decade, have laid the foundation for measuring protein interactions between a virus and individual host cells at a magnitude far greater than was previously possible with traditional techniques \citep{Fowler2014, Bloom2014}.
 Here, we dig into the benefits and limitations of two such quantitative assays, Phage Immunoprecipitation Sequencing (PhIP-Seq), and Deep Mutational Scanning (DMS).
 We will explore the methods, results, and analysis tools of two studies using these assays applied to proteins expressed by SARS-CoV-2.
 These studies will act as a template for understanding the biological insight provided by quantitative assays as a whole.
 First, we explore \citet{Shrock2020}, a large-scale PhIP-Seq study done at Harvard university to characterize the set epitopes found in SARS-CoV-2.
-Next, we observe how every single mutation across the protein responsible for viral entry on the novel coronavirus impacts the affinity of binding to ACE2 receptor on human cells in \cite{Starr2020}.
-%Finally, we see how these techniques are combined to offer insight into potential mutational pathways of escape from antibody recognition in \citet{Garrett2020}.
-Together, these studies motivate the use quantitative assays and associated analysis techniques in Immunology.
+Next, we observe how every possible SARS-CoV-2 variant of the protein responsible for viral entry (Receptor Binding Domain of Spike Protein) impacts the affinity of binding to the binging site on human cells (angiotensin converting enzyme 2) in \cite{Starr2020}.
+Together, we hope these studies motivate the use quantitative assays and associated analysis techniques in Immunology.
 
 \section*{Quantitative Assays in the Context of SARS-CoV-2}
 
 % should this be part of the intro?
 The RNA genome of SARS-CoV-2 consists of $\approx 30,000$ nucleotides which provide the landscape for $11$ protein coding regions \citep{Naqvi2020}.
-Of those, there exists a very small subset of less than $90$ nucleotides encoding for a epitopes identifying the virus to lymphocytes and invoking an immune response able to combat the infection.
-Designing effective therapeutics and understanding how their effectiveness as the virus evolves over time provokes two primary questions (among many others):
-(1) Given the viral genome, how can we accurately infer the correct epitopes which will act as the appropriate antigen and 
-(2) how effective will the chosen antigenic sequence be in the face of inevitable viral genome evolution of SARS-CoV-2.
-In this section we explore two recent studies which leverage commonly used quantitative assay techniques in the field of viral immunology to explore these specific questions. 
-For each of these quantitative assay methods, we describe the methods and their respective history, followed by the primary results of two novel studies.
+Of those, there exists a set of sub-sequences within the proteome ranging from $\approx 20$-$90$bp which encode for proteins expressed as epitopes. 
+These epitopes are identified by sampled antibodies via a significant measure of binding events between and antibody and a protein.
+Designing effective therapeutics and understanding how they will perform as the virus evolves over time provokes two (among many others) primary questions:
+(1) Given the viral genome, how can we accurately infer the correct regions of the genome which allow us to infer expressed epitopes and
+(2) what evolutionary factors are in play for key regions of the genome for SARS-CoV-2.
+In this section will will provide background on two quantitative assay techniques which allow us to explore these questions.
+For context, we explore two recent studies which leverage these assays in the field of viral immunology to study SARS-CoV-2.
 
 %HERE
 
@@ -166,7 +163,7 @@ For each of these quantitative assay methods, we describe the methods and their 
 % TODO Make sure this is the first paper to describe phip
 Addressing the question of inferring the profile of virus epitopes targeted by individual antibodies, we turn to one of the more notable quantitative assay techniques, known as Phage Immunoprecipitation Sequencing (PhIP-Seq).
 Originally, \citet{Larman2011} introduced this method which used oligonucleotide synthesis to create a library representation of all possible proteins generated by the human proteome.
-This quantitative assay was then used to identify which human proteins were being mislabeled as pathogens and attacked by the individuals own antibodies -- thus leading to auto-immune diseases such as Diabetes type I, multiple sclerosis, and rheumatoid arthritis.
+This quantitative assay was then used to identify which human proteins were being mislabeled as pathogens and attacked by the individual's own antibodies -- thus leading to auto-immune diseases such as Diabetes type I, multiple sclerosis, and rheumatoid arthritis.
 These synthetic protein libraries are commonly referred to as \textit{peptidomes} \citep{Mohan2018}.
 The entire span of possible proteins that may be expressed by a proteome of interest is created using a sliding window approach.
 The sliding window begins at the start codon and spans some number of nucleotide triplets to encode for a potential protein.
@@ -176,27 +173,26 @@ It should be noted that the chosen size of the window, or ``tile" -- and how how
 This is a direct trade-off between the size and cost of the synthetic library and the molecular detail of your results.
 Once the library is designed computationally, oligonuceotide synthesis is used to generate all genetic ``tiles"  encoding proteins of interest in the library.
 The synthetic oligonucleotide encodings are then cloned into a phage vector display (usually T7 phage). 
-Once cloned, the protein coding nucleotides of interest are then transcribed using the machinery of the phage and expressed on the exterior to create a peptidome library.
+Once cloned, the protein coding nucleotides of interest are then transcribed using the machinery of the phage and expressed on the exterior to create a phage-display peptidome library.
 
-
-The overarching concept of this technique is to create and label (barcode) a set of proteins of interest - this is the quantitative assay.
+The overarching concept of this technique is to create and label (i.e. \textit{barcode}) a set of proteins of interest - this is the quantitative assay.
 Once developed, this assay is then presented (\textit{homogenized}) with serum antibodies extracted from a patient of interest.
-Finally, the binding interactions between an antibody and specific protein are extracted (precipitated) using specialized magnetic beads.
-The resulting binding events gives us a set of barcoded genetic information within phage which are extracted by a lysis step then sequenced using NGS.
-When the demultiplexed samples are aligned with the library of oligonucleotides, we can count the number of each barcoded peptide which had a binding event with the antibodies of a sample.
-The resulting data from this process is then a counts array where each count represents the number of binding events for each of the peptides in the library.
+Finally, the binding interactions between an antibody and specific proteins are extracted (\textit{precipitated}) using specialized magnetic beads.
+The resulting binding events gives us a set of barcoded genetic information within phage which is extracted by a lysis step to be sequenced using NGS.
+When the demultiplexed samples are aligned with the computationally designed library of oligonucleotides, we can count the number of each barcoded peptide which had a binding event with the antibodies of a sample.
+The resulting data from this process is then a counts array where each count represents the number of sample specific binding events for each of the peptides in the library.
 When repeating this process with multiple samples, the arrays for each sample are merged to create what is most commonly referred to as the \textit{enrichment matrix}.
-It then follows that large numbers in the counts matrix represent some underlying binding affinity of a particular antibody to a specific peptide.
+Avoiding some detail, it then follows that large numbers in the counts matrix represent some underlying binding affinity of a particular antibody to a specific peptide.
 With respect to epitope detection in viruses of interest, this same technique is applied using the proteome of the virus to create the peptidome.
 We can then explore which proteins are targeted by antibodies produced during the infection of some patient or individual.
+Figure \ref{fig:PhIP-Seq-Cartoon} from \citet{Mohan2018} provides a succinct cartoon outlining the individual steps involved in a PhIP-Seq protocol.
+
 To summarize, this results in a picture of exactly which protein sequences an individual's antibodies are targeting.
 Given that the antibodies were generated as a direct response to a viral infection, we can expect the binding profiles to reveal all potential epitopes across a viral proteome.
-
 The first application of PhIP-Seq for viral epitope profiling was presented in \citet{Xu2015}, where the authors developed a peptidome library encapsulating all known human-infecting viruses -- the \textit{Virscan} library.
 Virscan contains over 100,000 proteins and offers the most broad view of potential epitopes to date.
 Since the introduction of this technique in immunology, a multitude of libraries for viral epitopes have been created and used in subsequent studies to identify detailed maps of individual antibody binding repertoires 
 Next, we explore how PhIP-Seq has been used to profile the antibody binding affinities and potential epitopes of SARS-CoV-2.
-
 
 \paragraph{Peptidomes to profile SARS-CoV-2 epitopes}
 In \citet{Shrock2020}, the immune (humoral) response of a mixed cohort of both COVID-19 positive and pre-pandemic individuals ($232$ and $190$, respectively) was quantified by presenting IgG and IgA antibody (\textit{serological}) samples to a set of synthetic peptidomes using PhIP-Seq.
@@ -210,10 +206,11 @@ Finally, the authors produce a library across the SARS-CoV-2 proteome with 56-me
 In total across all samples and libraries, this study measured more than $10^{8}$ unique peptide-antibody binding interactions.
 Using these individual profiles, the authors explore questions about COVID-19 disease outcome and SARS-CoV-2 epitopes which may be shared with other common human coronaviruses (HCoV's).
 
-% here
 
 \paragraph{SARS-CoV-2 Epitopes and cross-reactivity with endemic HCoV's}
-The authors analyze the enrichment matrix looking for significant enrichments among background noise by using a z-score approach and assigning p-values to each of the enrichments.
+The authors analyze the enrichment matrix looking for significant enrichments among background noise by using a z-score approach.
+Using ``Beads-Only" negative control samples, the authors used binning of peptide enrichments to compute expected mean and standard deviation of each tile.
+Figure \ref{fig:Mock-IP} shows the distribution of protein specific standard deviation and mean - as well as zero abundance (library coverage) as more Mock-IPs are added.
 The subset of significant enrichments among the unique sample-peptide enrichments are suggestive of a biological response when faced with a specific antigen and thus, revealing the profile of epitopes for each sample.
 The initial results presented provide evidence of SARS-CoV-2 specific epitopes along the Spike (S) and Nucleocapsid (N) proteins of the virus.
 In total, the authors identified 823 unique epitopes across the viral proteome.
@@ -222,6 +219,8 @@ However, variance of infection outcome within these groups suggests also that an
 Shared epitopes across viruses is known as \textit{cross-reactivity}.
 To understand which HCoV exposures may be cross-reactive with SARS-CoV-2 antibodies, the authors profiled pre-pandemic sample and found significant binding events to SARS-CoV-2 peptides.
 This result points out how exposure history plays a large role in infection outcome and may explain the large number of asymptomatic carriers of the disease. 
+Figure \ref{fig:Binding-Profile}D gives a high level look at binding results across HCoV's as the sum of hits for each individual \citep{Shrock2020}.
+
 
 \paragraph{Predicting SARS-CoV-2 infection history} 
 To understand the spread of a virus among a population, rapid testing for past infection is key.
@@ -238,11 +237,12 @@ These results provide evidence concerning the amount of information to be gained
 
 Understanding how underlying amino acid sequences relates to the function (\textit{phenotype}) of proteins remains at large in many facets of biology.
 In the case immunology, we are interested in the process by which a pathogen leads to diseased state in an individual - known as \textit{pathogenesis} \citep{Araya2011, Fowler2014, Weile2018}.
-We know, for instance, that more than half of human disease is caused by sequence mutations, or single nucleotide polymorphisms (SNPs) \citep{Stenson2009}.
+We know, for instance, that more than half of human disease is caused by sequence mutations, or \textit{single nucleotide polymorphisms} (SNPs) \citep{Stenson2009}.
 Unfortunately, the lack of ability to map a sequence to the respective phenotype poses a large problem when developing therapeutics or predicting the pathogenic outcome of mutation in a pathogen.
 %Unfortunately, it remains unknown how any particular sequence of underlying a protein relates to it's folding properties and overall function.
 To address the difficulty, \citep{Araya2011} popularized a method which uses mutagenesis to explore how sequence variation changes the binding properties of protein relative to the wild type protein of interest -- this method is known as Deep Mutational Scanning (DMS).
 This method generates a quantitative assay containing nearly every possible amino acid substitution along the protein of interest and then infers how each performs in vitro.
+Figure \ref{fig:DMS-Cartoon} is a cartoon outlining how frequencies are calculated among variants.
 If we consider binding as a key property of proteins, then the difference in binding affinity of mutations gives us a more full picture of how the underlying sequence relates to it's phenotype.
 Presented in \citet{Adams2016}, the authors show how this brute force approach to mutagenesis and subsequent measuring of binding affinity to another protein of interest allow us to explore the function of a protein at the sequence level.
 
@@ -281,6 +281,7 @@ To explore how existing mutations may be selected for currently, $31,570$ sequen
 Of all mutations found, 56 were observed in only a single sample presenting the low frequency of viral mutation and selection.
 The binding affinities of the observed mutations from human samples had significantly less deleterious affects when compared to random mutations, suggesting purifying selection among the viral population.
 Importantly, nearly all mutations present in human samples had nearly neutral change in binding affinity, which would seem to suggest there is no positive selection for more aggressive mutants in the population to date.
+Figure \ref{fig:Starr-Geno-Pheno} gives an outline of both $\Delta log(MFI)$ and $\Delta log_{10}(K_{D, app})$ for all mutations across a portion of the RBD \cite{Starr2020}.
 
 \section*{Conclusions and Discussion}
 
@@ -346,44 +347,46 @@ Together, these results provide motivation for using quantitative assays in vira
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.75\textwidth]{figures/PhIP-Seq-Cartoon.jpg}
-\caption{lsjfln}
+    \caption{Overview of the PhIP-seq methodology. Procedure step numbers are indicated in parentheses. A. A protein database is downloaded or designed. The pepsyn software is used to tile the protein sequences with overlapping peptide sequences. The oligonucleotide library encoding the peptide sequences is synthesized. The oligonucleotide library is PCR amplified with adapters for cloning into the phage display vector of choice. B. ELISA is used to quantify each sample’s IgG content for normalizing amount of antibody input into each phage binding reaction. Antibodies and their bound phage are captured using protein A/G coated magnetic beads. The library of peptide encoding DNA sequences are amplified by PCR directly from the immunoprecipitate. A second round of hemi-nested PCR is used to add sample-specific barcodes and sequencing adapters to the PCR1 product. Barcoded amplicons are pooled for sequencing on an Illumina instrument. C. Fastq sequencing files are demultiplexed and aligned to the reference sequences to obtain a count matrix. Statistical analysis of the count matrix is performed to determine peptide enrichments. Project specific analysis of peptide enrichments (e.g. identification of a common autoantigen) can then be carried out. - \citep{Mohan2018}}
 \label{fig:PhIP-Seq-Cartoon}
 \end{figure}
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.35\textwidth]{figures/DMS-Cartoon.jpg}
-\caption{lsjfln}
-\label{fig:DMS-Cartoon}
-\end{figure}
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.65\textwidth]{figures/Starr-Methods.jpg}
-\caption{lsjfln}
-\label{fig:Starr-Methods}
-\end{figure}
-
-\begin{figure}[h]
-\centering
 \includegraphics[width=0.65\textwidth]{figures/Binding-Profile.jpg}
-\caption{lsjfln}
+    \caption{(A) Phylogeny tree of 50 coronavirus sequences (32) constructed using MEGA X (33, 34). The scale bar indicates the estimated number of base substitutions per site (35). Coronaviruses included in the updated VirScan library are indicated in red. (B) Schematic representation of the ORFs encoded by the SARS-CoV-2 genome (10, 36). (C) Overview of the VirScan procedure (5–8). The coronavirus oligonucleotide library includes 56-mer peptides tiling every 28 amino acids (aa) across the proteomes of 10 coronavirus strains and 20-mer peptides tiling every 5 amino acids across the SARS-CoV-2 proteome. Oligonucleotides were cloned into a T7 bacteriophage display vector and packaged into phage particles displaying the encoded peptides on their surface. The phage library was mixed with sera containing antibodies that bind to their cognate epitopes on the phage surface; bound phage were isolated by IP with either anti-IgG– or anti-IgA–coated magnetic beads. Lastly, PCR amplification and Illumina sequencing from the DNA of the bound phage revealed the peptides targeted by the serum antibodies. (D) Detection of antibodies targeting coronavirus epitopes by VirScan. Heatmaps depict the humoral response from COVID-19 patients (n = 232) and pre–COVID-19 era control samples (n = 190). Each column represents a sample from a distinct individual. The color intensity indicates the number of 56-mer peptides from the indicated coronaviruses significantly enriched by IgG antibodies in the serum sample. (E) Box plots illustrate the number of peptide hits from the indicated coronaviruses in COVID-19 patients and pre–COVID-19 era controls. The box indicates the interquartile range, with a line at the median. The whiskers span 1.5 times the interquartile range. - \citep{Shrock2020}}
 \label{fig:Binding-Profile}
 \end{figure}
-
 
 \begin{figure}
 \centering
 \begin{tabular}{cc}
   \includegraphics[width=65mm]{figures/42_mockip_abundance_variance/counts/mean_limit_y.pdf} &   \includegraphics[width=65mm]{figures/42_mockip_abundance_variance/counts/std_limit_y.pdf} \\
-(a) first & (b) second \\[6pt]
+(a) & (b) \\[6pt]
 % \includegraphics[width=85mm]{figures/42_mockip_abundance_variance/counts/mean.pdf} &   \includegraphics[width=85mm]{figures/42_mockip_abundance_variance/counts/std.pdf} \\
 %(c) third & (d) fourth \\[6pt]
 \multicolumn{2}{c}{\includegraphics[width=85mm]{figures/42_mockip_abundance_variance/counts/per-zero.pdf} }\\
-\multicolumn{2}{c}{(e) fifth}
+\multicolumn{2}{c}{(C)}
 \end{tabular}
-\caption{caption}
+    \caption{A desciption of Negative control ``Mock-IP" sample using beads only with the library as described in \citet{Stoddard2020}. The pan-HCoV library includes just over 10,000 peptides. Each of the subfigures is a function of number of mock-IP's included when computing the each distribution. Each distribution to the right of another is a superset contianing all the previous Mock-IP's and all three sub-figures are the result of the same samples being chosen at each given Y. Each of the figures is facetted by both the library and experiment run to observe batch effects. (A) shows the distribution of mean enrichments across all peptides as a function of including more negative control samples. (B) shows the distribution of peptide variace as computed by each individual standard deviation, also as a function of adding more negative controls. (C) The number of peptides which have zero abundance (i.e their counts were zero) across all mock-IP's repoted as a percentage of all peptides in the library. The figure was generated independently and the data was derived from \citet{Stoddard2020}.} 
+\label{fig:Mock-IP}
 \end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.85\textwidth]{figures/DMS-Cartoon.jpg}
+    \caption{Deep mutational scanning. (A) Schematic of a deep mutational scanning experiment. Change in the abundance of variants is tracked by next-generation sequencing of DNA variants before and after selection for the function of the protein. The enrichment ratio (E) is a measure of the performance of each variant. (B) A sequence–function map of log2 enrichment ratios (E) for variants with a single amino acid change in a portion of the Pab1 protein. Blue, white, and red boxes represent variants that were depleted, neutral, or enriched, respectively, during the selection process; gray represents that no data passed quality filters; boxed with white dots represent the wild-type residue. - \citep{Starita2015}}
+\label{fig:DMS-Cartoon}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.65\textwidth]{figures/Starr-Geno-Pheno.jpg}
+    \caption{Sequence-to-Phenotype Maps of the SARS-CoV-2 RBD (A and B) Heatmaps illustrating how all single mutations affect RBD expression (A) and ACE2-binding affinity (B). Interactive versions of these heatmaps are at https://jbloomlab.github.io/SARS-CoV-2-RBD\_DMS and in Data S1. Squares are colored by mutational effect according to scale bars on the left, with red indicating deleterious mutations. The SARS-CoV-2 amino acid is indicated with an “x” and the SARS-CoV-1 amino acid, if different, is indicated with an “o”. Black boxes in top overlay indicate residues that contact ACE2 in the SARS-CoV-2 or SARS-CoV-1 crystal structures. The purple overlay represents the relative solvent accessibility (RSA) of a residue in the ACE2-bound SARS-CoV-2 crystal structure. See also Figure S3, Table S2, and Data S1. - \citep{Starr2020}}
+\label{fig:Starr-Geno-Pheno}
+\end{figure}
+
+
 
 % \clearpage
 % \section*{Supplementary Materials}

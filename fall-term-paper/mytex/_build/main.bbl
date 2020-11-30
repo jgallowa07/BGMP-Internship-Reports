@@ -1,4 +1,4 @@
-\begin{thebibliography}{22}
+\begin{thebibliography}{23}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -151,6 +151,16 @@ Misha Soskine and Dan Tawfik.
 \newblock Mutational effects and the evolution of new protein functions.
 \newblock \emph{Nature reviews. Genetics}, 11:\penalty0 572--82, 08 2010.
 \newblock \doi{10.1038/nrg2808}.
+
+\bibitem[Starita and Fields(2015)]{Starita2015}
+Lea~M. Starita and Stanley Fields.
+\newblock Deep mutational scanning: A highly parallel method to measure the
+  effects of mutation on protein function.
+\newblock \emph{Cold Spring Harbor Protocols}, 2015\penalty0 (8):\penalty0
+  pdb.top077503, 2015.
+\newblock \doi{10.1101/pdb.top077503}.
+\newblock URL
+  \url{http://cshprotocols.cshlp.org/content/2015/8/pdb.top077503.abstract}.
 
 \bibitem[Starr et~al.(2020)Starr, Greaney, Hilton, Ellis, Crawford, Dingens,
   Navarro, Bowen, Tortorici, Walls, King, Veesler, and Bloom]{Starr2020}

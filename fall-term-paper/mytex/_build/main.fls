@@ -140,12 +140,6 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT /home/jared/BGMP/BGMP-Internship-Reports/fall-term-paper/mytex/figures/PhIP-Seq-Cartoon.jpg
 INPUT /home/jared/BGMP/BGMP-Internship-Reports/fall-term-paper/mytex/figures/PhIP-Seq-Cartoon.jpg
 INPUT /home/jared/BGMP/BGMP-Internship-Reports/fall-term-paper/mytex/figures/PhIP-Seq-Cartoon.jpg
-INPUT /home/jared/BGMP/BGMP-Internship-Reports/fall-term-paper/mytex/figures/DMS-Cartoon.jpg
-INPUT /home/jared/BGMP/BGMP-Internship-Reports/fall-term-paper/mytex/figures/DMS-Cartoon.jpg
-INPUT /home/jared/BGMP/BGMP-Internship-Reports/fall-term-paper/mytex/figures/DMS-Cartoon.jpg
-INPUT /home/jared/BGMP/BGMP-Internship-Reports/fall-term-paper/mytex/figures/Starr-Methods.jpg
-INPUT /home/jared/BGMP/BGMP-Internship-Reports/fall-term-paper/mytex/figures/Starr-Methods.jpg
-INPUT /home/jared/BGMP/BGMP-Internship-Reports/fall-term-paper/mytex/figures/Starr-Methods.jpg
 INPUT /home/jared/BGMP/BGMP-Internship-Reports/fall-term-paper/mytex/figures/Binding-Profile.jpg
 INPUT /home/jared/BGMP/BGMP-Internship-Reports/fall-term-paper/mytex/figures/Binding-Profile.jpg
 INPUT /home/jared/BGMP/BGMP-Internship-Reports/fall-term-paper/mytex/figures/Binding-Profile.jpg
@@ -158,6 +152,12 @@ INPUT /home/jared/BGMP/BGMP-Internship-Reports/fall-term-paper/mytex/figures/42_
 INPUT /home/jared/BGMP/BGMP-Internship-Reports/fall-term-paper/mytex/figures/42_mockip_abundance_variance/counts/per-zero.pdf
 INPUT /home/jared/BGMP/BGMP-Internship-Reports/fall-term-paper/mytex/figures/42_mockip_abundance_variance/counts/per-zero.pdf
 INPUT /home/jared/BGMP/BGMP-Internship-Reports/fall-term-paper/mytex/figures/42_mockip_abundance_variance/counts/per-zero.pdf
+INPUT /home/jared/BGMP/BGMP-Internship-Reports/fall-term-paper/mytex/figures/DMS-Cartoon.jpg
+INPUT /home/jared/BGMP/BGMP-Internship-Reports/fall-term-paper/mytex/figures/DMS-Cartoon.jpg
+INPUT /home/jared/BGMP/BGMP-Internship-Reports/fall-term-paper/mytex/figures/DMS-Cartoon.jpg
+INPUT /home/jared/BGMP/BGMP-Internship-Reports/fall-term-paper/mytex/figures/Starr-Geno-Pheno.jpg
+INPUT /home/jared/BGMP/BGMP-Internship-Reports/fall-term-paper/mytex/figures/Starr-Geno-Pheno.jpg
+INPUT /home/jared/BGMP/BGMP-Internship-Reports/fall-term-paper/mytex/figures/Starr-Geno-Pheno.jpg
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out
