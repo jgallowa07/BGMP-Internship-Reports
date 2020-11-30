@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.8.3)  29 NOV 2020 18:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.8.3)  29 NOV 2020 19:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -408,62 +408,72 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5] [6] (./mai
 n.bbl [7])
-<figures/PhIP-Seq-Cartoon.jpg, id=177, 385.44pt x 319.9152pt>
+<figures/PhIP-Seq-Cartoon.jpg, id=181, 385.44pt x 319.9152pt>
 File: figures/PhIP-Seq-Cartoon.jpg Graphic file (type jpg)
 <use figures/PhIP-Seq-Cartoon.jpg>
-Package pdftex.def Info: figures/PhIP-Seq-Cartoon.jpg  used on input line 340.
+Package pdftex.def Info: figures/PhIP-Seq-Cartoon.jpg  used on input line 339.
 (pdftex.def)             Requested size: 363.15741pt x 301.41838pt.
 
 [8]
-<figures/DMS-Cartoon.jpg, id=184, 192.72pt x 501.5538pt>
+<figures/DMS-Cartoon.jpg, id=188, 192.72pt x 501.5538pt>
 File: figures/DMS-Cartoon.jpg Graphic file (type jpg)
 <use figures/DMS-Cartoon.jpg>
-Package pdftex.def Info: figures/DMS-Cartoon.jpg  used on input line 347.
+Package pdftex.def Info: figures/DMS-Cartoon.jpg  used on input line 346.
 (pdftex.def)             Requested size: 169.47641pt x 441.06259pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/Starr-Methods.jpg, id=185, 239.9364pt x 239.9364pt>
+<figures/Starr-Methods.jpg, id=189, 239.9364pt x 239.9364pt>
 File: figures/Starr-Methods.jpg Graphic file (type jpg)
 <use figures/Starr-Methods.jpg>
-Package pdftex.def Info: figures/Starr-Methods.jpg  used on input line 354.
+Package pdftex.def Info: figures/Starr-Methods.jpg  used on input line 353.
 (pdftex.def)             Requested size: 314.73346pt x 314.76929pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/42_mockip_abundance_variance/counts/mean_limit_y.pdf, id=186, 508.1766
+<figures/Binding-Profile.jpg, id=190, 261.3765pt x 308.352pt>
+File: figures/Binding-Profile.jpg Graphic file (type jpg)
+<use figures/Binding-Profile.jpg>
+Package pdftex.def Info: figures/Binding-Profile.jpg  used on input line 360.
+(pdftex.def)             Requested size: 314.73346pt x 371.29561pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figures/42_mockip_abundance_variance/counts/mean_limit_y.pdf, id=191, 508.1766
 8pt x 410.27966pt>
 File: figures/42_mockip_abundance_variance/counts/mean_limit_y.pdf Graphic file
  (type pdf)
 <use figures/42_mockip_abundance_variance/counts/mean_limit_y.pdf>
 Package pdftex.def Info: figures/42_mockip_abundance_variance/counts/mean_limit
-_y.pdf  used on input line 363.
+_y.pdf  used on input line 369.
 (pdftex.def)             Requested size: 184.9429pt x 149.31573pt.
-<figures/42_mockip_abundance_variance/counts/std_limit_y.pdf, id=187, 508.17668
+<figures/42_mockip_abundance_variance/counts/std_limit_y.pdf, id=192, 508.17668
 pt x 410.27966pt>
 File: figures/42_mockip_abundance_variance/counts/std_limit_y.pdf Graphic file 
 (type pdf)
 <use figures/42_mockip_abundance_variance/counts/std_limit_y.pdf>
 Package pdftex.def Info: figures/42_mockip_abundance_variance/counts/std_limit_
-y.pdf  used on input line 363.
+y.pdf  used on input line 369.
 (pdftex.def)             Requested size: 184.9429pt x 149.31573pt.
-<figures/42_mockip_abundance_variance/counts/per-zero.pdf, id=188, 508.17668pt 
+<figures/42_mockip_abundance_variance/counts/per-zero.pdf, id=193, 508.17668pt 
 x 410.27966pt>
 File: figures/42_mockip_abundance_variance/counts/per-zero.pdf Graphic file (ty
 pe pdf)
 <use figures/42_mockip_abundance_variance/counts/per-zero.pdf>
 Package pdftex.def Info: figures/42_mockip_abundance_variance/counts/per-zero.p
-df  used on input line 367.
+df  used on input line 373.
 (pdftex.def)             Requested size: 241.84842pt x 195.25423pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 379.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 385.
 [9 </home/jared/BGMP/BGMP-Internship-Reports/fall-term-paper/mytex/figures/PhIP
 -Seq-Cartoon.jpg>] [10 </home/jared/BGMP/BGMP-Internship-Reports/fall-term-pape
 r/mytex/figures/DMS-Cartoon.jpg>] [11 </home/jared/BGMP/BGMP-Internship-Reports
 /fall-term-paper/mytex/figures/Starr-Methods.jpg>] [12 </home/jared/BGMP/BGMP-I
-nternship-Reports/fall-term-paper/mytex/figures/42_mockip_abundance_variance/co
-unts/mean_limit_y.pdf> </home/jared/BGMP/BGMP-Internship-Reports/fall-term-pape
-r/mytex/figures/42_mockip_abundance_variance/counts/std_limit_y.pdf
+nternship-Reports/fall-term-paper/mytex/figures/Binding-Profile.jpg>] [13 </hom
+e/jared/BGMP/BGMP-Internship-Reports/fall-term-paper/mytex/figures/42_mockip_ab
+undance_variance/counts/mean_limit_y.pdf> </home/jared/BGMP/BGMP-Internship-Rep
+orts/fall-term-paper/mytex/figures/42_mockip_abundance_variance/counts/std_limi
+t_y.pdf
 
 pdfTeX warning: pdflatex (file /home/jared/BGMP/BGMP-Internship-Reports/fall-te
 rm-paper/mytex/figures/42_mockip_abundance_variance/counts/std_limit_y.pdf): PD
@@ -475,19 +485,19 @@ pdfTeX warning: pdflatex (file /home/jared/BGMP/BGMP-Internship-Reports/fall-te
 rm-paper/mytex/figures/42_mockip_abundance_variance/counts/per-zero.pdf): PDF i
 nclusion: multiple pdfs with page group included in a single page
 >]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 379.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 385.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 379.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 379.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 385.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 385.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 379.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 385.
  ) 
 Here is how much of TeX's memory you used:
- 7139 strings out of 494923
- 102327 string characters out of 6180743
- 197441 words of memory out of 5000000
- 10314 multiletter control sequences out of 15000+600000
+ 7147 strings out of 494923
+ 102509 string characters out of 6180743
+ 197470 words of memory out of 5000000
+ 10319 multiletter control sequences out of 15000+600000
  12969 words of font info for 50 fonts, out of 8000000 for 9000
  18 hyphenation exceptions out of 8191
  28i,11n,32p,389b,450s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -504,10 +514,10 @@ cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
 0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (12 pages, 936702 bytes).
+Output written on main.pdf (13 pages, 1144159 bytes).
 PDF statistics:
- 409 PDF objects out of 1000 (max. 8388607)
- 248 compressed objects within 3 object streams
- 52 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 420 PDF objects out of 1000 (max. 8388607)
+ 257 compressed objects within 3 object streams
+ 54 named destinations out of 1000 (max. 500000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
