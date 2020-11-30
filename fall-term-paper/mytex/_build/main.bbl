@@ -1,4 +1,4 @@
-\begin{thebibliography}{17}
+\begin{thebibliography}{22}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -74,6 +74,21 @@ H.~Benjamin Larman, Zhenming Zhao, Uri Laserson, Mamie~Z. Li, Alberto Ciccia,
 \newblock URL \url{https://pubmed.ncbi.nlm.nih.gov/21602805}.
 \newblock 21602805[pmid].
 
+\bibitem[Matreyek et~al.(2018)Matreyek, Starita, Stephany, Martin, Chiasson,
+  Gray, Kircher, Khechaduri, Dines, Hause, Bhatia, Evans, Relling, Yang,
+  Shendure, and Fowler]{Matreyek2018}
+Kenneth~A. Matreyek, Lea~M. Starita, Jason~J. Stephany, Beth Martin, Melissa~A.
+  Chiasson, Vanessa~E. Gray, Martin Kircher, Arineh Khechaduri, Jennifer~N.
+  Dines, Ronald~J. Hause, Smita Bhatia, William~E. Evans, Mary~V. Relling,
+  Wenjian Yang, Jay Shendure, and Douglas~M. Fowler.
+\newblock Multiplex assessment of protein variant abundance by massively
+  parallel sequencing.
+\newblock \emph{Nature genetics}, 50\penalty0 (6):\penalty0 874--882, Jun 2018.
+\newblock ISSN 1546-1718.
+\newblock \doi{10.1038/s41588-018-0122-z}.
+\newblock URL \url{https://pubmed.ncbi.nlm.nih.gov/29785012}.
+\newblock 29785012[pmid].
+
 \bibitem[Mohan et~al.(2018)Mohan, Wansley, Sie, Noon, Baer, Laserson, and
   Larman]{Mohan2018}
 Divya Mohan, Daniel~L. Wansley, Brandon~M. Sie, Muhammad~S. Noon, Alan~N. Baer,
@@ -100,6 +115,15 @@ Ahmad Abu~Turab Naqvi, Kisa Fatima, Taj Mohammad, Urooj Fatima, Indrakant~K.
 \newblock URL \url{https://pubmed.ncbi.nlm.nih.gov/32544429}.
 \newblock 32544429[pmid].
 
+\bibitem[Peterman and Levine(2016)]{Peterman2016}
+Neil Peterman and Erel Levine.
+\newblock Sort-seq under the hood: implications of design choices on
+  large-scale characterization of sequence-function relations.
+\newblock \emph{BMC Genomics}, 17\penalty0 (1):\penalty0 206, Mar 2016.
+\newblock ISSN 1471-2164.
+\newblock \doi{10.1186/s12864-016-2533-5}.
+\newblock URL \url{https://doi.org/10.1186/s12864-016-2533-5}.
+
 \bibitem[Shrock et~al.(2020)Shrock, Fujimura, Kula, Timms, Lee, Leng, Robinson,
   Sie, Li, Chen, Logue, Zuiani, McCulloch, Lelis, Henson, Monaco, Travers,
   Habibi, Clarke, Caturegli, Laeyendecker, Piechocka-Trocha, Li, Khatri, Chu, ,
@@ -121,6 +145,12 @@ Ellen Shrock, Eric Fujimura, Tomasz Kula, Richard~T. Timms, I-Hsiu Lee, Yumei
 \newblock \doi{10.1126/science.abd4250}.
 \newblock URL
   \url{https://science.sciencemag.org/content/early/2020/09/28/science.abd4250}.
+
+\bibitem[Soskine and Tawfik(2010)]{Soskine2010}
+Misha Soskine and Dan Tawfik.
+\newblock Mutational effects and the evolution of new protein functions.
+\newblock \emph{Nature reviews. Genetics}, 11:\penalty0 572--82, 08 2010.
+\newblock \doi{10.1038/nrg2808}.
 
 \bibitem[Starr et~al.(2020)Starr, Greaney, Hilton, Ellis, Crawford, Dingens,
   Navarro, Bowen, Tortorici, Walls, King, Veesler, and Bloom]{Starr2020}
@@ -198,5 +228,29 @@ Fan Wu, Su~Zhao, Bin Yu, Yan-Mei Chen, Wen Wang, Zhi-Gang Song, Yi~Hu, Zhao-Wu
 \newblock ISSN 1476-4687.
 \newblock \doi{10.1038/s41586-020-2008-3}.
 \newblock URL \url{https://doi.org/10.1038/s41586-020-2008-3}.
+
+\bibitem[Xu et~al.(2015)Xu, Kula, Xu, Li, Vernon, Ndung'u, Ruxrungtham,
+  Sanchez, Brander, Chung, O'Connor, Walker, Larman, and Elledge]{Xu2015}
+George~J. Xu, Tomasz Kula, Qikai Xu, Mamie~Z. Li, Suzanne~D. Vernon, Thumbi
+  Ndung'u, Kiat Ruxrungtham, Jorge Sanchez, Christian Brander, Raymond~T.
+  Chung, Kevin~C. O'Connor, Bruce Walker, H.~Benjamin Larman, and Stephen~J.
+  Elledge.
+\newblock Viral immunology. comprehensive serological profiling of human
+  populations using a synthetic human virome.
+\newblock \emph{Science (New York, N.Y.)}, 348\penalty0 (6239):\penalty0
+  aaa0698--aaa0698, Jun 2015.
+\newblock ISSN 1095-9203.
+\newblock \doi{10.1126/science.aaa0698}.
+\newblock URL \url{https://pubmed.ncbi.nlm.nih.gov/26045439}.
+\newblock 26045439[pmid].
+
+\bibitem[Yuki et~al.(2020)Yuki, Fujiogi, and Koutsogiannaki]{Yuki2020}
+Koichi Yuki, Miho Fujiogi, and Sophia Koutsogiannaki.
+\newblock Covid-19 pathophysiology: A review.
+\newblock \emph{Clinical Immunology}, 215:\penalty0 108427, 2020.
+\newblock ISSN 1521-6616.
+\newblock \doi{https://doi.org/10.1016/j.clim.2020.108427}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S152166162030262X}.
 
 \end{thebibliography}
