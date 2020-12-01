@@ -1,4 +1,4 @@
-\begin{thebibliography}{23}
+\begin{thebibliography}{24}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -114,6 +114,16 @@ Ahmad Abu~Turab Naqvi, Kisa Fatima, Taj Mohammad, Urooj Fatima, Indrakant~K.
 \newblock \doi{10.1016/j.bbadis.2020.165878}.
 \newblock URL \url{https://pubmed.ncbi.nlm.nih.gov/32544429}.
 \newblock 32544429[pmid].
+
+\bibitem[Otwinowski et~al.(2018)Otwinowski, McCandlish, and
+  Plotkin]{Otwinowski2018}
+Jakub Otwinowski, David~M. McCandlish, and Joshua~B. Plotkin.
+\newblock Inferring the shape of global epistasis.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 115\penalty0
+  (32):\penalty0 E7550--E7558, 2018.
+\newblock ISSN 0027-8424.
+\newblock \doi{10.1073/pnas.1804015115}.
+\newblock URL \url{https://www.pnas.org/content/115/32/E7550}.
 
 \bibitem[Peterman and Levine(2016)]{Peterman2016}
 Neil Peterman and Erel Levine.
